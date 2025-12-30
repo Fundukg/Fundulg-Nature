@@ -1,0 +1,223 @@
+@font-face {
+  font-family: "Kulim Park";
+  src: url("./font/Kulim_Park/KulimPark-Regular.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  max-width: 2000px;
+  margin: 0 auto;
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+.header {
+}
+.header_container {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+  background-color: #ffffff;
+}
+.header_container_nav {
+  display: flex;
+  flex: 1;
+  gap: 43px;
+}
+.header_nav_link {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(61, 61, 61, 1);
+  text-decoration: none;
+}
+.header_container_logo {
+  /* max-width: 2000px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header_logo_img {
+  width: 80px;
+  height: 80px;
+}
+.header_logo_text {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+}
+.header_container_button {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.header_button {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(102, 102, 102, 1);
+  border-radius: 50px;
+  padding: 10px;
+}
+.save_nature {
+  width: 100%;
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+.save_nature_container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.save_nature_container_img {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.save_nature_img {
+  width: 100%;
+  border-radius: 50px;
+}
+.save_nature_container_text {
+  padding: 20px;
+  width: 2000px;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+.save_nature_container_text_line {
+  width: 100%;
+  padding: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: end;
+}
+.save_nature_text_title {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 150px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.save_nature_text {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 500;
+  font-style: ExtraLight;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+}
+.save_nature_container_button {
+  display: flex;
+  height: 550px;
+  justify-content: center;
+  align-items: end;
+}
+.save_nature_button {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: 11px;
+  border-radius: 100px;
+  margin: 50px;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(191, 99, 47, 1);
+  background-color: #ffffff;
+  border: 0;
+}
+.our_mission {
+  padding: 150px 0 20px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  /* justify-content: center; */
+  align-items: center;
+}
+.our_mission_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.our_mission_img {
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+  /* flex: 1; */
+}
+.our_mission_text_container {
+  width: 70%;
+  height: auto;
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  /* flex: 1; */
+}
+.our_mission_text_title {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 60px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(62, 62, 62, 1);
+}
+.our_mission_text_basic {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(62, 62, 62, 1);
+}
+.our_mission_text_button {
+  margin-top: 20px;
+  width: 100%;
+  height: 80px;
+  border-radius: 50px;
+  border: rgba(188, 94, 40, 1);
+
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 200;
+  font-style: Light;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: rgba(188, 94, 40, 1);
+  color: rgba(23, 23, 23, 1);
+}
