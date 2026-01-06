@@ -14,8 +14,6 @@ body {
   overflow-x: hidden;
   background-color: #ffffff;
 }
-.header {
-}
 .header_container {
   width: 100%;
   height: 150px;
@@ -363,4 +361,221 @@ body {
   letter-spacing: 0%;
   text-align: center;
   color: rgba(62, 62, 62, 1);
+}
+.help_is_important {
+  width: 100%;
+  padding: 100px 0 20px 0;
+  display: flex;
+  align-items: center;
+}
+.help_is_important_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.help_is_important_container_img {
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: center;
+}
+.elephants {
+  width: 100%;
+  height: auto;
+  border-radius: 50px;
+}
+.help_is_important_container_text {
+  position: absolute;
+  z-index: 2;
+  width: 50%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.help_is_important_text_title {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 600;
+  font-size: 70px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.help_is_important_text_basik {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  width: 85%;
+}
+.help_is_important_button {
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.footer {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+  border-top: 1px solid rgba(62, 62, 62, 1);
+  display: flex;
+}
+.footer_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 20px 0;
+}
+.footer_contrainer_link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.footer_contrainer_link .footer_link_list:last-child {
+  flex: 1;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.footer_link_list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+.footer_title {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(62, 62, 62, 1);
+}
+.footer_list_text {
+  width: fit-content;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(62, 62, 62, 1);
+  text-decoration: none;
+  display: flex;
+}
+.email_input {
+  display: flex;
+  width: 100%;
+  border: rgba(62, 62, 62, 0);
+  border-bottom: 1px solid rgba(62, 62, 62, 1);
+  margin-bottom: 5px;
+}
+.MyCheckbox {
+  width: 10px;
+  height: 10px;
+}
+.MyCheckbox_text {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.footer_container_button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  gap: 15px;
+  padding-right: 63px;
+}
+.footer_button {
+  font-family: Kulim Park;
+  font-weight: 600;
+  font-style: Regular;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(173, 173, 173);
+  border: 1px solid rgb(174, 174, 174);
+}
+.footer_container_copyright {
+  padding-top: 73px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+.footer_container_logo {
+  display: flex;
+  flex-direction: column;
+}
+.footer_logo_container_copyright {
+  position: relative;
+  display: flex;
+  z-index: 2;
+}
+.footer_logo {
+  width: 110px;
+  height: 110px;
+}
+.footer_logo_copyright {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  bottom: 0;
+  right: 0;
+}
+.footer_logo_text {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  flex-direction: row-reverse;
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 27px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.footer_text_adres,
+.footer_text_numbear,
+.footer_text_slogan,
+.footer_separator,
+.footer_text_link {
+  font-family: "Kulim Park", sans-serif;
+  font-weight: 300;
+  font-style: Light;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: rgba(151, 151, 151, 1);
+  text-decoration: none;
 }

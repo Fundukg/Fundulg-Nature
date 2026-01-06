@@ -181,7 +181,7 @@
       <section class="help_is_important">
         <div class="help_is_important_container">
           <div class="help_is_important_container_img">
-            <img src="/img/Картинка сланов.png" alt="Слоны" />
+            <img src="/img/Картинка сланов.png" class="elephants" alt="Слоны" />
           </div>
           <div class="help_is_important_container_text">
             <h1 class="help_is_important_text_title">
@@ -195,7 +195,9 @@
               программы и расширять наше влияние.
             </p>
             <button class="help_is_important_button">
-              Хочу начать помогать прямо сейчас
+              <span class="help_is_important_button_text"
+                >Хочу начать помогать прямо сейчас</span
+              >
             </button>
           </div>
         </div>
@@ -230,20 +232,22 @@
           </div>
           <div class="footer_link_list">
             <h1 class="footer_title">Подписаться на новости</h1>
-            <form action="">
-              <!-- <label for="email">Введите ваш почтовый адрес:</label> -->
-              <input
-                type="text"
-                id="email"
-                name="email"
-                class="email_input"
-                placeholder="Введите ваш почтовый адрес"
-              />
-            </form>
-            <input type="checkbox" id="MyCheckbox" />
-            <label for="MyCheckbox">
-              Согласен с обработкой персональных данных.
-            </label>
+            <div class="footer_container_form">
+              <form action="">
+                <!-- <label for="email">Введите ваш почтовый адрес:</label> -->
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="email_input"
+                  placeholder="Введите ваш почтовый адрес"
+                />
+              </form>
+              <input type="checkbox" id="MyCheckbox" class="MyCheckbox" />
+              <label for="MyCheckbox" class="MyCheckbox_text">
+                Согласен с обработкой персональных данных.
+              </label>
+            </div>
             <div class="footer_container_button">
               <button class="footer_button">VK</button>
               <button class="footer_button">TELEGRAM</button>
@@ -252,10 +256,12 @@
         </div>
         <div class="footer_container_copyright">
           <div class="footer_container_logo">
-            <img src="/img/Panda.svg" alt="панда" class="footer_logo" />
-            <span class="material-symbols-outlined footer_logo_copyright">
-              copyright
-            </span>
+            <div class="footer_logo_container_copyright">
+              <img src="/img/Panda.svg" alt="панда" class="footer_logo" />
+              <span class="material-symbols-outlined footer_logo_copyright">
+                copyright
+              </span>
+            </div>
             <p class="footer_logo_text">FNN</p>
           </div>
           <div class="footer_container_adreses">
@@ -274,7 +280,7 @@
             </div>
 
             <p class="footer_text_slogan">
-              ©️ 2024 FNN — Защита природы и дикой фауны для устойчивого
+              &copy; 2024 FNN — Защита природы и дикой фауны для устойчивого
               будущего.
             </p>
           </div>
