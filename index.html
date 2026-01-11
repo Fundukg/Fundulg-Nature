@@ -7,9 +7,14 @@
     <link rel="icon" href="/img/Panda.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt,copyright"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_right_alt,copyright,menu"
     />
     <script src="main.js" defer></script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+      }
+    </style>
     <title>Fundukg Nature</title>
   </head>
   <body>
@@ -28,6 +33,19 @@
           <div class="header_container_button">
             <a href="#" class="header_button"> Начать помогать </a>
           </div>
+          <div class="header_container_burger">
+            <span class="material-symbols-outlined header_burger"> menu </span>
+          </div>
+        </div>
+        <div class="mobile_menu">
+          <div class="mobile_menu_content">
+            <a href="#" class="header_nav_link">Наша работа</a
+            ><a href="#" class="header_nav_link">Сообщество</a
+            ><a href="#" class="header_nav_link">О нас</a>
+          </div>
+          <div class="header_container_button">
+            <a href="#" class="header_button"> Начать помогать </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -40,19 +58,18 @@
               alt="Картинка сурков"
               class="save_nature_img"
             />
-          </div>
-          <div class="save_nature_container_text">
-            <div class="save_nature_container_text_line">
-              <h1 class="save_nature_text_title">
-                Сохраните природу<br />
-                вместе
-              </h1>
-              <h3 class="save_nature_text">
-                Защитим природу и животных — <br />наше будущее зависит от нас!
-              </h3>
-            </div>
-            <div class="save_nature_container_button">
-              <button class="save_nature_button">Помощь</button>
+
+            <div class="save_nature_container_text">
+              <div class="save_nature_container_text_line">
+                <h1 class="save_nature_text_title">Сохраните природу вместе</h1>
+                <h3 class="save_nature_text">
+                  Защитим природу и животных — <br />наше будущее зависит от
+                  нас!
+                </h3>
+              </div>
+              <div class="save_nature_container_button">
+                <button class="save_nature_button">Помощь</button>
+              </div>
             </div>
           </div>
         </div>
@@ -79,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="statistic">
+      <!-- <section class="statistic">
         <div class="statistic_container">
           <div class="statistic_container_list">
             <div class="statistic_container_block">
@@ -201,9 +218,9 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer_container">
         <div class="footer_contrainer_link">
           <div class="footer_link_list">
@@ -234,7 +251,6 @@
             <h1 class="footer_title">Подписаться на новости</h1>
             <div class="footer_container_form">
               <form action="">
-                <!-- <label for="email">Введите ваш почтовый адрес:</label> -->
                 <input
                   type="text"
                   id="email"
@@ -286,6 +302,6 @@
           </div>
         </div>
       </div>
-    </footer>
+    </footer> -->
   </body>
 </html>
