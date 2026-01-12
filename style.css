@@ -377,7 +377,6 @@ body.no_scroll {
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0%;
-  text-align: center;
   color: rgba(62, 62, 62, 1);
 }
 .help_is_important {
@@ -688,6 +687,12 @@ body.no_scroll {
     font-size: 30px;
     height: 65px;
   }
+  .statistic_text_title {
+    font-size: 70px;
+  }
+  .statistic_text_basic_ {
+    font-size: 40px;
+  }
 }
 @media (max-width: 860px) {
   .save_nature_img {
@@ -703,8 +708,27 @@ body.no_scroll {
     width: 90px;
     height: 90px;
   }
+  .statistic_container {
+    flex-direction: column;
+  }
+  .statistic_text_title{
+    font-size:  60px;
+  }
+  .statistic_text_basic{
+     font-size: 35px;
+  }
 }
 @media (max-width: 660px) {
+  br {
+    display: none;
+  }
+  main{ 
+    padding-top: 150px;
+  }
+  .header_container{
+    position: fixed;
+    z-index: 99;
+  }
   .overlay_menu {
     position: fixed;
     top: 0;
@@ -735,7 +759,7 @@ body.no_scroll {
   }
   .overlay_menu.active {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: auto; 
   }
   .mobile_menu.active {
     transform: translateX(0);
