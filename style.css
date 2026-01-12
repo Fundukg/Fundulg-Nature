@@ -296,28 +296,21 @@ body.no_scroll {
 .how_we_work_container_img {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 100px;
-}
-.how_we_work_container_img {
-  width: 30%;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 100px;
 }
 .how_we_work_dolfins {
   display: flex;
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  height: auto;
   border-radius: 50px;
 }
 .how_we_work_giraffe {
   display: flex;
   align-self: center;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  height: auto;
   border-radius: 50px;
 }
 .how_we_work_container_text {
@@ -648,6 +641,15 @@ body.no_scroll {
     font-size: 30px;
     height: 65px;
   }
+  .how_we_work_giraffe {
+    align-self: flex-end;
+  }
+  .how_we_work_text_title {
+    font-size: 60px;
+  }
+  .how_we_work_text_list span:first-child {
+    font-size: 25px;
+  }
 }
 @media (max-width: 1050px) {
   .save_nature_img {
@@ -711,21 +713,37 @@ body.no_scroll {
   .statistic_container {
     flex-direction: column;
   }
-  .statistic_text_title{
-    font-size:  60px;
+  .statistic_text_title {
+    font-size: 60px;
   }
-  .statistic_text_basic{
-     font-size: 35px;
+  .statistic_text_basic {
+    font-size: 35px;
+  }
+  .how_we_work_container {
+    flex-direction: column;
+  }
+  .how_we_work_container_text {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .how_we_work_text_title {
+    font-size: 50px;
+  }
+  .how_we_work_text_list span:first-child {
+    font-size: 20px;
+  }
+  .how_we_work_text_basik{
+    font-size: 15px;
   }
 }
 @media (max-width: 660px) {
   br {
     display: none;
   }
-  main{ 
+  main {
     padding-top: 150px;
   }
-  .header_container{
+  .header_container {
     position: fixed;
     z-index: 99;
   }
@@ -759,7 +777,7 @@ body.no_scroll {
   }
   .overlay_menu.active {
     opacity: 1;
-    pointer-events: auto; 
+    pointer-events: auto;
   }
   .mobile_menu.active {
     transform: translateX(0);
@@ -840,5 +858,12 @@ body.no_scroll {
   .our_mission_img {
     width: 100%;
     height: 100%;
+  }
+  .how_we_work_giraffe{
+    align-self: center;
+  }
+  .how_we_work_container_text {
+    flex-direction: column;
+    justify-content: center;
   }
 }
