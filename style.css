@@ -15,6 +15,12 @@ body {
   background-color: #ffffff;
   padding: 0 10px 0 10px;
 }
+body.no_scroll {
+  overflow: hidden;
+}
+.mobile_menu {
+  display: none;
+}
 .header_container {
   width: 100%;
   height: 150px;
@@ -262,6 +268,7 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   color: rgba(62, 62, 62, 1);
+  text-align: center;
 }
 .statistic_text_basic {
   font-family: "Kulim Park", sans-serif;
@@ -271,6 +278,7 @@ body {
   line-height: 100%;
   letter-spacing: 0%;
   color: rgba(62, 62, 62, 1);
+  text-align: center;
 }
 .how_we_work {
   width: 100%;
@@ -697,6 +705,58 @@ body {
   }
 }
 @media (max-width: 660px) {
+  .overlay_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+  .mobile_menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+    padding: 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .overlay_menu.active {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .mobile_menu.active {
+    transform: translateX(0);
+  }
+  .mobile_menu_content {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .header_container_burger {
+    justify-content: end;
+  }
+  .header_button {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+  }
   .header_container_nav,
   .header_container_button,
   .header_logo_text {
